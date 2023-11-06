@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "ProFolder:CreateRoot": {
+      "commandName": "Project",
+      "commandLineArgs": "createroot"
+    },
+    "ProFolder:CreateProject": {
+      "commandName": "Project",
+      "commandLineArgs": "craeteproject"
+    },
+    "ProFolder:Help": {
+      "commandName": "Project",
+      "commandLineArgs": "help"
+    }
+  }
+}
