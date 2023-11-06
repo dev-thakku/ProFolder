@@ -1,5 +1,4 @@
 ﻿using ProFolder.Handlers;
-using System.Diagnostics;
 
 namespace ProFolder
 {

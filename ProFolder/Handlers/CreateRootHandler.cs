@@ -6,7 +6,7 @@ namespace ProFolder.Handlers
     {
         private readonly TraceHandler _traceHandler;
 
-        public CreateRootHandler(TraceHandler traceHandler) 
+        public CreateRootHandler(TraceHandler traceHandler)
         {
             _traceHandler = traceHandler;
         }
