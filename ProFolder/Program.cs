@@ -1,4 +1,5 @@
 ﻿using ProFolder.Handlers;
+using System.IO;
 
 namespace ProFolder
 {
@@ -16,12 +17,12 @@ namespace ProFolder
             }
         }
 
+
         private static void ProcessCommands(string[] args)
         {
             var command = GetCommand(args);
             var traceHandler = new TraceHandler();
             var commandHandler = CommandFactory.CreateCommmandHandler(command, traceHandler);
-
             commandHandler.Execute(args);
         }
 
@@ -35,6 +36,5 @@ namespace ProFolder
             return
                 !Enum.TryParse(args[0], true, out Command commandValue) ? Command.Invalid : commandValue;
         }
-
     }
 }

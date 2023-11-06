@@ -2,18 +2,15 @@
 
 namespace ProFolder.Handlers
 {
-    public class CreateRootHandler : ICommandHandler
+    public class CreateRootHandler : CreateFoldersHandler, ICommandHandler
     {
-        private readonly TraceHandler _traceHandler;
 
-        public CreateRootHandler(TraceHandler traceHandler)
-        {
-            _traceHandler = traceHandler;
-        }
+        public CreateRootHandler(TraceHandler traceHandler) : base(traceHandler) { }
 
         public void Execute(string[] args)
         {
-            _traceHandler.PrintMessage("Create Root");
+            CreateFolders(FolderType.RootFolders, args);
+            _traceHandler.PrintMessage("Root folders successfully created!");
         }
 
         public void Help()

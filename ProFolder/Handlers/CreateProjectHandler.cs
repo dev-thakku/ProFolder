@@ -1,19 +1,17 @@
 ﻿using ProFolder.Handlers.Interfaces;
+using ProFolder.Utils;
 
 namespace ProFolder.Handlers
 {
-    public class CreateProjectHandler : ICommandHandler
+    public class CreateProjectHandler : CreateFoldersHandler, ICommandHandler
     {
-        private readonly TraceHandler _traceHandler;
 
-        public CreateProjectHandler(TraceHandler traceHandler)
-        {
-            _traceHandler = traceHandler;
-        }
+        public CreateProjectHandler(TraceHandler traceHandler) : base(traceHandler) { }
 
         public void Execute(string[] args)
         {
-            _traceHandler.PrintMessage("Create Project");
+            CreateFolders(FolderType.ProjectFolders, args);
+            _traceHandler.PrintMessage("Project folders successfully created!");
         }
 
         public void Help()

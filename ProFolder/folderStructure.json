@@ -1,0 +1,56 @@
+﻿{
+  "rootfolders": [
+    {
+      "name": "Personal",
+      "priority": "01"
+    },
+    {
+      "name": "Research",
+      "priority": "02"
+    },
+    {
+      "name": "Tools",
+      "priority": "03"
+    },
+    {
+      "name": "Research",
+      "priority": "98"
+    },
+    {
+      "name": "Temporary",
+      "priority": "99"
+    }
+  ],
+  "projectFolders": [
+    {
+      "name": "Source_Code",
+      "priority": "01",
+      "subfolders": [
+        {
+          "name": "Sub",
+          "priority": "01"
+        },
+        {
+          "name": "Sub",
+          "priority": "02"
+        }
+      ]
+    },
+    {
+      "name": "Docs",
+      "priority": "02"
+    },
+    {
+      "name": "Research",
+      "priority": "97"
+    },
+    {
+      "name": "Reference",
+      "priority": "98"
+    },
+    {
+      "name": "Temporary",
+      "priority": "99"
+    }
+  ]
+}
